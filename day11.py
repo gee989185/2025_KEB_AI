@@ -6,3 +6,12 @@ df =pd.DataFrame(
      "b" : [7, 8, 9],
      "c" : [10, 11, 12]},index = [1, 2, 3])
 print(df)
+print('------------------')
+df1 = pd.DataFrame(
+    [[4, 7, 10],
+     [5, 8, 11],
+     [6, 9, 12]],
+    index=[1, 2, 3],
+    columns=['a', 'b', 'c']
+)
+print(df1)
