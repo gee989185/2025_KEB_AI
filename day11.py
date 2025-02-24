@@ -8,6 +8,8 @@ from sklearn.linear_model import LinearRegression
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from tglearn import LinearRegression
+
 # 데이터를 다운로드하고 준비합니다.
 ls = pd.read_csv("https://github.com/ageron/data/raw/main/lifesat/lifesat.csv")
 # 2차원 리스트(독립변수, 명목변수 나누기)
