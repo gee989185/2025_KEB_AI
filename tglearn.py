@@ -27,6 +27,8 @@ class KNeighborsRegressor:
             k_nearest = np.argsort(distance_test)[:self.n_neighbors]    #정렬 후 인덱스반환(n_neighbors까지)
             k_nearest_y = self.y[k_nearest]
             y_predict.append(np.mean(k_nearest_y))      # 저장(b)
+            #print(distance_test)
+            #print(k_nearest)                            # [5,6,4]
         return np.array(y_predict)
 
 
